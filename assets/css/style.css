@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato&display=swap");
+:root {
+	--primary-dark: #0a66c2;
+	--primary-light: #fff8f0;
+	--neutral-dark: #131515;
+	--neutral-light: #ffffff;
+	--container-width: 1440px;
+	--main-header: 30px;
+	--sub-header: 24px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: lato;
+	font-weight: 400;
+}
+
+/* Common */
+
+.container-size {
+	width: var(--container-width);
+	margin-top: 60px;
+}
+
+.main-heading{
+	font-size: var(--main-header);
+	font-weight: 400;
+}
+
+.sub-heading {
+	font-size: var(--sub-header);
+	font-weight: 600;
+}
+
+
+
+.light-button {
+	width: 190px;
+	height: 56px;
+	border: 1px solid var(--primary-dark);
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 22px;
+}
+.light-button:hover {
+	background-color: var(--primary-dark);
+	color: white;
+}
+p {
+	font-size: 18px;
+}
+.button-primary {
+	width: 190px;
+	height: 56px;
+	background-color: var(--primary-dark);
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	border: none;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.navbar-container {
+	width: 100vw;
+	height: 118px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-position {
+	width: var(--container-width);
+	height: auto;
+	padding: 0;
+}
+
+.collapse-background {
+	background-color: #ffffff;
+}
+
+.logo {
+	width: 161px;
+	height: 53px;
+	object-fit: contain;
+}
+
+.toggle-search {
+	display: none;
+}
+
+.search-icon {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	object-fit: contain;
+	background-color: var(--primary-dark);
+}
+
+/* sexual health and rights */
+
+.health-and-rights-position{
+	display: flex;
+	align-items: center;
+}
+
+.health-and-rights-left{
+	width: 634px;
+	height: 236px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.health-and-rights-image{
+	width: 443px;
+	height: 329px;
+}
+
+.buttons{
+	width: 405px;
+	display:flex;
+	justify-content: space-between;
+}
+
+.buttons>button{
+	width: 190px;
+}
+
+
+
+/* Helpful reads */
+
+.helpful-topics {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-container {
+	background-color: rgb(20, 55, 86);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card-size {
+	width: 350px;
+	height: 307px;
+	/* background-color: #48abe0; */
+	position: relative;
+	/* border-top: none; */
+}
+
+.card-size::before {
+	content: "";
+	width: 89px;
+	height: 46px;
+	position: absolute;
+	top: -44px;
+	border-radius: 10rem 10rem 0 0;
+	/* background-color: aquamarine; */
+	border: 2px solid var(--primary-dark);
+	z-index: 1;
+	margin: auto;
+	left: 0;
+	right: 0;
+	border-bottom: 3px solid white;
+}
+
+.card-size > img {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: -32px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	object-fit: contain;
+	z-index: 2;
+}
+
+.card-inner-contents {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	border: 2px solid var(--primary-dark);
+	position: relative;
+}
+
+.helpful-topics-link {
+	color: black;
+	display: inline;
+	width: 125px;
+}
+
+.card-inner-contents > button {
+	color: var(--primary-dark);
+}
+
+.helpful-topics-container {
+	flex-wrap: wrap;
+	gap: 60px 30px;
+}
