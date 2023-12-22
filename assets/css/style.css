@@ -236,7 +236,6 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 }
 
 .helpful-topics-link {
-	color: black;
 	display: inline;
 	width: 125px;
 }
@@ -261,7 +260,6 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 
 .resources-content{
 	margin-top: 0;
-
 }
 
 .category-content{
@@ -282,8 +280,50 @@ align-items: center;
 	text-align: center;
 }
 
-/* .category-content-description{
-	width: 229px;
-	height: 22px;
-} */
+/* Popular resources */
+
+.popular-resources-container{
+	margin-top: 60px;
+}
+.popular-card-style{
+	width: 350px; 
+	height: 410px;
+	border: 2px solid var(--primary-dark);
+	border-radius: 10px;
+	position: relative;
+}
+
+.popular-card-style::before{
+	content: 'Audio';
+	margin: auto;
+	width: 160px;
+	height: 44px;
+	background-color: var(--primary-dark);
+	position: absolute;
+	left: 0;
+	right: 0;
+	border: none;
+	border-radius:  0px 0px 20px 20px;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video-before-content::before{
+	content: "Video";
+}
+
+.pdf-before-content::before{
+	content: "Pdf";
+
+}
+
+.position-img{
+	margin-top: 64px;
+	width: 100%;
+	height: 159px;
+	padding: 0 20px;
+}
 
