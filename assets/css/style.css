@@ -15,11 +15,21 @@
 	font-weight: 400;
 }
 
+body {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+
 /* Common */
+/* Container size */
 .container-size {
 	width: var(--container-width);
 	margin-top: 60px;
 }
+
+/* Headings */
 
 .main-heading{
 	font-size: var(--main-header);
@@ -31,6 +41,11 @@
 .sub-heading {
 	font-size: var(--sub-header);
 	font-weight: 600;
+}
+
+/* buttons */
+.secondary-light-button {
+	color: var(--primary-dark);
 }
 
 .light-button {
@@ -46,10 +61,6 @@
 	color: white;
 }
 
-p {
-	font-size: 18px;
-}
-
 .button-primary {
 	width: 190px;
 	height: 56px;
@@ -61,11 +72,21 @@ p {
 	border: none;
 }
 
-body {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
+/* paragraph and headers */
+.main-heading-line{
+	margin-top: 16px;
+	width: 63px;
+	border: 2px solid var(--primary-dark);
 }
+
+.main-heading-description{
+	margin-top: 16px;
+}
+
+p {
+	font-size: 18px;
+}
+
 
 /* Navbar */
 .navbar-container {
@@ -164,16 +185,6 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	align-items: center;
 }
 
-.helpful-topics-line{
-	margin-top: 16px;
-	width: 63px;
-	border: 2px solid var(--primary-dark);
-}
-
-.main-heading-description{
-	margin-top: 16px;
-}
-
 .card-container {
 	background-color: rgb(20, 55, 86);
 	display: flex;
@@ -230,12 +241,49 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	width: 125px;
 }
 
-.card-inner-contents > button {
-	color: var(--primary-dark);
-}
-
 .helpful-topics-container {
 	flex-wrap: wrap;
 	gap: 55px 10px;
 	margin-top: 104px;
 }
+
+/* Resources Category */
+.resources-container{
+	margin-top: 60px;
+	width: 1440px;
+	height: 423px;
+	background-color: #f2f7fc;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.resources-content{
+	margin-top: 0;
+
+}
+
+.category-content{
+width:255px;
+height:192px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.category-content>img{
+	width: 60px;
+	height: 110px;
+}
+
+.category-content p{
+	width: 100%;
+	text-align: center;
+}
+
+/* .category-content-description{
+	width: 229px;
+	height: 22px;
+} */
+
