@@ -16,11 +16,11 @@
 }
 
 
+
 /* Common */
 
 /* Headings */
-
-.main-heading{
+.main-heading {
 	font-size: var(--main-header);
 	font-size: 30px;
 	font-weight: 400;
@@ -31,6 +31,8 @@
 	font-size: var(--sub-header);
 	font-weight: 600;
 }
+
+
 
 /* buttons */
 .secondary-light-button {
@@ -51,7 +53,6 @@
 	border: none;
 }
 
-
 .button-primary {
 	width: 190px;
 	height: 56px;
@@ -63,15 +64,17 @@
 	border: none;
 }
 
+
+
 /* paragraph and headers */
-.main-heading-line{
+.main-heading-line {
 	margin-top: 16px;
 	width: 63px;
 	border: 2px solid var(--primary-dark);
 	background-color: var(--primary-dark);
 }
 
-.main-heading-description{
+.main-heading-description {
 	margin-top: 16px;
 }
 
@@ -79,28 +82,30 @@ p {
 	font-size: 18px;
 }
 
+
+
 /* spacing */
-.margin-top-spacing{
+.margin-top-spacing {
 	margin-top: 60px;
 }
 
-.flex-wrapping{
+.flex-wrapping {
 	flex-wrap: wrap;
 	margin-bottom: 15px;
 }
 
-
-/* Navbar */
-.navbarr{
-	width: 100vw;
-	background: var(--white, #FFF);
-box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
+.grid-gap {
+	row-gap: 30px;
 }
 
 
-	/* .collapse-background {
-		background-color: #ffffff;
-	} */
+
+/* Navbar */
+.navbar-outer-container {
+	width: 100vw;
+	background: var(--white, #fff);
+	box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
+}
 
 .logo {
 	width: 161px;
@@ -120,16 +125,16 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	background-color: var(--primary-dark);
 }
 
-/* sexual health and rights */
 
-.health-and-rights-position{
+
+/* sexual health and rights */
+.health-and-rights-position {
 	display: flex;
 	align-items: center;
 	flex-flow: row wrap-reverse;
-	
 }
 
-.accessible{
+.accessible {
 	width: 48px;
 	height: 48px;
 	border: 1.5px solid var(--primary-dark);
@@ -141,33 +146,32 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	justify-content: center;
 	align-items: center;
 	color: var(--primary-dark);
-	
 }
 
-
-
-.health-and-rights-left{
+.health-and-rights-left {
 	width: 634px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 }
 
+.health-and-rights-image{
+	height: 330px;
+}
 
-.buttons{
+.buttons {
 	width: 405px;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 }
 
-.buttons>button{
+.buttons > button {
 	width: 190px;
 }
 
 
 
 /* Helpful reads */
-
 .helpful-topics {
 	display: flex;
 	flex-flow: column wrap;
@@ -184,9 +188,7 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 .card-size {
 	width: 350px;
 	height: 307px;
-	/* background-color: #48abe0; */
 	position: relative;
-	/* border-top: none; */
 }
 
 .card-size::before {
@@ -196,7 +198,6 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	position: absolute;
 	top: -43px;
 	border-radius: 10rem 10rem 0 0;
-	/* background-color: aquamarine; */
 	border: 2px solid var(--primary-dark);
 	z-index: 1;
 	margin: auto;
@@ -236,8 +237,10 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	margin-top: 104px;
 }
 
+
+
 /* Resources Category */
-.resources-container{
+.resources-container {
 	width: 100vw;
 	min-height: 423px;
 	background-color: #f2f7fc;
@@ -247,50 +250,65 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	justify-content: center;
 }
 
-.resources-flex{
+.resources-flex {
 	flex-wrap: wrap;
 	gap: 20px;
 }
 
-.category-content{
-width:255px;
-height:192px;
-display: flex;
-justify-content: center;
-align-items: center;
+.category-content {
+	width: 255px;
+	height: 192px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
-.category-content>img{
+.category-content::before{
+	content: '10';
+	width: 65px;
+	height: 30px;
+	border: none;
+	border-radius: 1px 4px 5px 5px;
+	background-color: var(--primary-dark);
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	color: white;
+}
+
+.category-content-sex::before{
+	content: '6';
+}
+
+.category-content > img {
 	width: 60px;
 	height: 110px;
 }
 
-.category-content p{
+.category-content p {
 	width: 100%;
 	text-align: center;
 }
 
-/* Popular resources */
 
-.popular-resources-container{
+
+/* Popular resources */
+.popular-resources-container {
 	margin-top: 60px;
 }
 
-.grid-gap{
-	row-gap: 30px;
-	/* width: var(--container-width); */
-}
-
-.popular-card-style{
-	width: 350px; 
+.popular-card-style {
+	width: 350px;
 	height: 410px;
 	border: 2px solid var(--primary-dark);
 	border-radius: 10px;
 	position: relative;
 }
 
-.popular-card-style::before{
-	content: 'Audio';
+.popular-card-style::before {
+	content: "Audio";
 	margin: auto;
 	width: 160px;
 	height: 44px;
@@ -299,7 +317,7 @@ align-items: center;
 	left: 0;
 	right: 0;
 	border: none;
-	border-radius:  0px 0px 20px 20px;
+	border-radius: 0px 0px 20px 20px;
 	text-align: center;
 	color: white;
 	display: flex;
@@ -307,16 +325,15 @@ align-items: center;
 	align-items: center;
 }
 
-.video-before-content::before{
+.video-before-content::before {
 	content: "Video";
 }
 
-.pdf-before-content::before{
+.pdf-before-content::before {
 	content: "Pdf";
-
 }
 
-.position-img{
+.position-img {
 	margin-top: 64px;
 	width: 100%;
 	height: 159px;
@@ -324,31 +341,33 @@ align-items: center;
 }
 
 
+
 /* Nearest Hospital  */
-.hospital-container{
+.hospital-container {
 	max-width: 1140px;
 	margin-top: 60px;
 }
 
-.hospital-map{
+.hospital-map {
 	width: 100%;
 	height: 100%;
 }
 
-.bottom-padding{	
+.bottom-padding {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.bottom-space{
+.bottom-space {
 	margin-top: 20px;
 	padding-left: 0;
 	padding-right: 0;
-	
 }
 
+
+
 /* App Download */
-.download-container{
+.download-container {
 	margin-top: 113px;
 	width: 1100px;
 	height: 367px;
@@ -361,72 +380,66 @@ align-items: center;
 	color: white;
 }
 
-.mockup-img-container{
+.mockup-img-container {
 	width: 301px;
 	height: 100%;
 	position: relative;
 }
 
-.mockup-img-container>img{
+.mockup-img-container > img {
 	height: 420px;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	
 }
 
-.download-content{
+.download-content {
 	width: 615px;
 }
 
-.download-content>h1{
+.download-content > h1 {
 	text-transform: uppercase;
-
 }
 
-@media(max-width: 1130px){
-	.download-container{
+@media (max-width: 1130px) {
+	.download-container {
 		max-width: 97vw;
 	}
-	.mockup-img-container>img{
+	.mockup-img-container > img {
 		padding-left: 20px;
 		height: 100%;
 		bottom: 0px;
-
 	}
-	.download-content{
+	.download-content {
 		width: 500px;
 	}
 }
 
-
-@media(max-width: 730px){
-	.download-container{
+@media (max-width: 730px) {
+	.download-container {
 		flex-flow: column;
 		height: 700px;
 		flex-direction: column-reverse;
 		justify-content: space-between;
 	}
-	.mockup-img-container{
+	.mockup-img-container {
 		width: 100%;
 		height: 60%;
 		object-fit: cover;
 	}
-	
-	.mockup-img-container>img{
+
+	.mockup-img-container > img {
 		padding: 0;
 		height: 100%;
-
 	}
 
-	.download-content{
+	.download-content {
 		margin-top: 55px;
 		height: 35%;
 		width: 70%;
-	
 	}
 
-	.download-content>h1{
+	.download-content > h1 {
 		font-size: 15px;
 		line-height: 22px;
 	}
@@ -434,34 +447,32 @@ align-items: center;
 		font-size: 13px;
 	}
 
-	.download-content button{
+	.download-content button {
 		width: 130px;
 		height: 40px;
 		font-size: 13px;
 	}
 }
 
-
 /* footer */
-.footer-container{
+.footer-container {
 	margin-top: 60px;
 }
 
-.footer-logo{
+.footer-logo {
 	margin-bottom: 10px;
 }
 
-.social-media>img{
+.social-media > img {
 	width: 34px;
 	height: 34px;
 }
 
-.footer-nav-link{
+.footer-nav-link {
 	color: black;
 }
 
-
-.contact-information-design::before{
+.contact-information-design::before {
 	content: "";
 	margin: auto;
 	width: 268px;
@@ -475,13 +486,15 @@ align-items: center;
 	position: absolute;
 }
 
-.contact-information>img{
+.contact-information > img {
 	width: 24px;
 	height: 24px;
 	margin-right: 15px;
 }
 
-.copyright{
+
+/* Copyright */
+.copyright {
 	width: 100vw;
 	height: 85px;
 	display: flex;
@@ -491,7 +504,7 @@ align-items: center;
 	border-top: 2px solid #7d7979;
 }
 
-.copyright>p{
+.copyright > p {
 	font-size: 14px;
 	margin-bottom: 0;
 	color: #7d7979;
