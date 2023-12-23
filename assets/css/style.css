@@ -107,14 +107,28 @@ p {
 	box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 }
 
+.navbar-brand{
+	margin-right: 5rem;
+}
+
 .logo {
 	width: 161px;
 	height: 53px;
 	object-fit: contain;
 }
 
-.toggle-search {
+.form-flex{
+	flex-wrap: nowrap;
+}
+
+.hide {
 	display: none;
+	
+}
+
+
+.show{
+	display: block;
 }
 
 .search-icon {
@@ -125,6 +139,14 @@ p {
 	background-color: var(--primary-dark);
 }
 
+@media(max-width: 991px){
+	.hide{
+		display: block;
+	}
+	.search-icon{
+		display: none;
+	}
+}
 
 
 /* sexual health and rights */
