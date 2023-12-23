@@ -1,451 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pahunch</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Pahunch</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+		<link rel="icon" href="./assets/images/logo.svg" type="image/png" />
 
-	<link rel="icon" href="./assets/images/logo.svg" type="image/png" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
 
-	<link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body>
-	<!-- Navbar -->
-	<div class="navbarr">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light navbar-position">
-			<a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo" /></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse collapse-background" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Learning Contents</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Resources</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="mr-sm-2 toggle-search" type="search" placeholder="Search" aria-label="Search" />
-					<button class="btn my-2 my-sm-0 search-icon" type="button">
-						<i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+	<body>
+		<!-- Navbar -->
+		<div class="navbarr">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-position">
+					<a class="navbar-brand" href="#"
+						><img src="./assets/images/logo.svg" alt="logo"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
 					</button>
-				</form>
-			</div>
-		</nav>
-	</div>
-</div>
 
-	<!--Sexual and Reproductive Health and rights -->
-	<div class="container d-flex justify-content-between margin-top-spacing health-and-rights-position">
-		<div class="health-and-rights-left">
-			<h1 class="main-heading">Sexual and Reproductive <br /> Health and Rights</h1>
-			<p>
-				Sexual and Reproductive Health and Rights (SRHR) encompass a
-				fundamental set of human rights related to sexuality, reproduction,
-				and well-being.
+					<div
+						class="collapse navbar-collapse collapse-background"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Learning Contents</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Resources</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input
+								class="mr-sm-2 toggle-search"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button class="btn my-2 my-sm-0 search-icon" type="button">
+								<i
+									class="fa-solid fa-magnifying-glass"
+									style="color: #ffffff"
+								></i>
+							</button>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!--Sexual and Reproductive Health and rights -->
+		<div
+			class="container d-flex justify-content-between margin-top-spacing health-and-rights-position"
+		>
+			<div class="health-and-rights-left">
+				<h1 class="main-heading">
+					Sexual and Reproductive <br />
+					Health and Rights
+				</h1>
+				<p>
+					Sexual and Reproductive Health and Rights (SRHR) encompass a
+					fundamental set of human rights related to sexuality, reproduction,
+					and well-being.
+				</p>
+				<div class="buttons">
+					<button type="button" class="btn btn-primary button-primary">
+						Play Audio &nbsp;
+						<i
+							class="fa-regular fa-circle-play play"
+							style="color: #ffffff"
+						></i>
+					</button>
+
+					<button type="button" class="btn btn-light light-button">
+						Learn More
+					</button>
+				</div>
+			</div>
+			<div class="health-and-rights-image">
+				<img
+					src="./assets/images/healthRight.png"
+					alt="Sexual and reproduction"
+				/>
+			</div>
+			<button type="button" class="btn btn-light accessible">
+				<img src="./assets/images/accessible.svg" alt="" />
+			</button>
+		</div>
+
+		<!-- Helpful Topics -->
+		<div class="container margin-top-spacing">
+			<h1 class="main-heading">Helpful Topics</h1>
+			<div class="main-heading-line"></div>
+			<p class="main-heading-description">
+				Click on the card or Learn more button to see more about the topic of
+				your choice.
 			</p>
-			<div class="buttons">
-				<button type="button" class="btn btn-primary button-primary">
-					Play Audio &nbsp;
-					<i class="fa-regular fa-circle-play play" style="color: #ffffff"></i>
-				</button>
-
-				<button type="button" class="btn btn-light light-button">
-					Learn More
-				</button>
-			</div>
-		</div>
-		<div class="health-and-rights-image">
-			<img src="./assets/images/healthRight.png" alt="Sexual and reproduction" />
-		</div>
-		<button type="button" class="btn btn-light accessible">
-			<img src="./assets/images/accessible.svg" alt="">
-		</button>
-	</div>
-
-	<!-- Helpful Topics -->
-	<div class="container margin-top-spacing">
-		<h1 class="main-heading">Helpful Topics</h1>
-		<div class="main-heading-line"></div>
-		<p class="main-heading-description">Click on the card or Learn more button to see more about the topic of your
-			choice.</p>
-		<div class="d-flex justify-content-between  helpful-topics-container">
-			
+			<div class="d-flex justify-content-between helpful-topics-container">
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/anatomy.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/anatomy.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Human body and anatomy</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
-					</div>			
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
+					</div>
 				</div>
-			
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/gender.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/gender.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Gender, Sex and Sexuality</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
-						
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/contraceptive.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/contraceptive.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Contraception</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
-						
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/pregnant.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/pregnant.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Pregnancy</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
-			
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/safe abortion.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/safe abortion.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Safe Abortion</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
-			
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/gender based violence.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/gender based violence.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Gender Based Violence</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
-			
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/HIV and STIs.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/HIV and STIs.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">HIV and STIs</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
-			
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/harmful practices.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/harmful practices.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Harmful practices</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
-			
+
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/laws of SRHR.svg">
+					<img class="card-img-top" src="./assets/images/laws of SRHR.svg" />
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Laws in SRHR in Nepal</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i> </a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+						</a>
 					</div>
 				</div>
 
 				<div class="card card-size">
-					<img class="card-img-top" src="./assets/images/referral services.svg" alt="Card image cap">
+					<img
+						class="card-img-top"
+						src="./assets/images/referral services.svg"
+						alt="Card image cap"
+					/>
 					<div class="card-body card-inner-contents">
 						<h5 class="card-title sub-heading">Referral Services</h5>
 						<p class="card-text">
-							Contraception, also known as birth control, encompasses a range of methods and techniques
-							designed to prevent pregnancy. It allows individuals and couples to have cont...
+							Contraception, also known as birth control, encompasses a range of
+							methods and techniques designed to prevent pregnancy. It allows
+							individuals and couples to have cont...
 						</p>
-						<a href="#" class="link-underline-primary">Learn More &nbsp; <i class="fa-solid fa-arrow-right"
-							style="color: #0a66c2;"></i></a>
+						<a href="#" class="link-underline-primary"
+							>Learn More &nbsp;
+							<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i
+						></a>
 					</div>
 				</div>
+			</div>
 		</div>
-	</div>
 
-	<!-- resources category -->
-	<div class="resources-container">
-		<div class="resources-content container-size">
-			<h1 class="main-heading">Resources Category</h1>
+		<!-- resources category -->
+		<div class="margin-top-spacing resources-container">
+			<div class="container">
+				<h1 class="main-heading">Resources Category</h1>
+				<div class="main-heading-line"></div>
+				<div class="d-flex justify-content-between flex-wrapping">
+					<p class="main-heading-description">
+						Click on the card to see the topics related to the selected
+						category.
+					</p>
+					<a href="#" class="link-underline-primary">
+						View All &nbsp;
+						<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+					</a>
+				</div>
+				<div class="d-flex justify-content-between resources-flex">
+					<div class="card category-content">
+						<img
+							class="card-img-top"
+							src="./assets/images/mental health.svg"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<p class="card-text">Mental Health</p>
+						</div>
+					</div>
+					<div class="card category-content">
+						<img
+							class="card-img-top"
+							src="./assets/images/health insurance.svg"
+							alt="Card image cap"
+						/>
+						<div class="card-body category-content-description">
+							<p class="card-text">Sexual and Reproductive Health and Rights</p>
+						</div>
+					</div>
+					<div class="card category-content">
+						<img
+							class="card-img-top"
+							src="./assets/images/mental health.svg"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<p class="card-text">Mental Health</p>
+						</div>
+					</div>
+					<div class="card category-content">
+						<img
+							class="card-img-top"
+							src="./assets/images/health insurance.svg"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<p class="card-text">Sexual and Reproductive Health and Rights</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Popular resources -->
+
+		<div class="container popular-resources-container">
+			<h1 class="main-heading">Popular Resources</h1>
 			<div class="main-heading-line"></div>
-			<div class="d-flex justify-content-between">
-				<p class="main-heading-description">Click on the card to see the topics related to the selected
-					category.</p>
-					<a href="#" class="link-underline-primary">View All &nbsp; <i class="fa-solid fa-arrow-right"
-						style="color: #0a66c2;"></i> </a>
-
+			<div
+				class="d-flex justify-content-between align-items-center flex-wrapping"
+			>
+				<p class="main-heading-description">
+					Click on the card to see the topics related to the selected category.
+				</p>
+				<a href="#" class="link-underline-primary"
+					>View All &nbsp;
+					<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+				</a>
 			</div>
-			<div class="d-flex justify-content-between">
-				<div class="card category-content">
-					<img class="card-img-top" src="./assets/images/mental health.svg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Mental Health</p>
-					</div>
-				</div>
-				<div class="card category-content">
-					<img class="card-img-top" src="./assets/images/health insurance.svg" alt="Card image cap">
-					<div class="card-body category-content-description">
-						<p class="card-text">Sexual and Reproductive Health and Rights </p>
-					</div>
-				</div>
-				<div class="card category-content">
-					<img class="card-img-top" src="./assets/images/mental health.svg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Mental Health</p>
-					</div>
-				</div>
-				<div class="card category-content">
-					<img class="card-img-top" src="./assets/images/health insurance.svg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Sexual and Reproductive Health and Rights </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Popular resources -->
-
-	<div class=" container popular-resources-container">
-		<h1 class="main-heading">Popular Resources</h1>
-		<div class="main-heading-line"></div>
-		<div class="d-flex justify-content-between align-items-center">
-			<p class="main-heading-description">Click on the card to see the topics related to the selected
-				category.</p>
-			<a href="#" class="link-underline-primary">View All &nbsp; <i class="fa-solid fa-arrow-right"
-					style="color: #0a66c2;"></i> </a>
-
-		</div>
-		<div class="row grid-gap">
-			<div class="col">
-				<div class="card popular-card-style">
-					<div class="position-img">
-						<img class="card-img-top" src="./assets/images/audio.svg" alt="Card image cap">
-					</div>
-					<div class="card-body">
-						<h5 class="card-title sub-heading">Disability Visibility</h5>
-						<p class="card-text">Book by Alice Wong is an essential anthology from blog posts, manifestos,
-							and eulogies to Congressional testimonies, and more providing a gli...</p>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card popular-card-style video-before-content">
-					<div class="position-img">
-						<img class="card-img-top" src="./assets/images/video.svg" alt="Card image cap">
-					</div>
-					<div class="card-body">
-						<h5 class="card-title sub-heading">Not So Different</h5>
-						<p class="card-text">Book that offers a lighthearted and relatable glimpse into the author’s
-							life. With humor and refreshing honesty, Burcaw addresses the curious mind.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card popular-card-style pdf-before-content">
-
-					<div class="position-img">
-						<img class="card-img-top" src="./assets/images/pdf.svg" alt="Card image cap">
-					</div>
-					<div class="card-body">
-						<h5 class="card-title sub-heading ">The Pretty One</h5>
-						<p class="card-text">Keah Brown's book offers a much-needed perspective on the experiences of
-							being Black and disabled in a predominantly able-bodied white Am...</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- Nearest Hospitals -->
-	<div class="container hospital-container">
-		<h1 class="main-heading">Nearest Hospital</h1>
-		<div class="main-heading-line"></div>
-
-		<p class="main-heading-description">Click on the card to see more about the topic of your choice.</p>
-		<div class="row	">
-			<div class="col-12 col-md-8 map-col">
-				<iframe class="hospital-map"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8645079525863!2d85.35946007428655!3d27.721469376174436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bda4a951f0f%3A0x3ddabb234891c3bd!2sBuddha%20Stupa!5e0!3m2!1sen!2snp!4v1703304396201!5m2!1sen!2snp"
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-			<div class="col ">
-				<div class="col bottom-padding">
-					<div class="card">
+			<div class="row grid-gap">
+				<div class="col">
+					<div class="card popular-card-style">
+						<div class="position-img">
+							<img
+								class="card-img-top"
+								src="./assets/images/audio.svg"
+								alt="Card image cap"
+							/>
+						</div>
 						<div class="card-body">
-							<h5 class="card-title sub-heading">Teaching Hospital</h5>
-							<p class="card-text">Maharajgunj Rd, Kathmandu 44600</p>
-							<p><a href="#" class="link-underline-primary">Get Location</a></p>
-
+							<h5 class="card-title sub-heading">Disability Visibility</h5>
+							<p class="card-text">
+								Book by Alice Wong is an essential anthology from blog posts,
+								manifestos, and eulogies to Congressional testimonies, and more
+								providing a gli...
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col bottom-space">
-					<div class="card">
+				<div class="col">
+					<div class="card popular-card-style video-before-content">
+						<div class="position-img">
+							<img
+								class="card-img-top"
+								src="./assets/images/video.svg"
+								alt="Card image cap"
+							/>
+						</div>
 						<div class="card-body">
-							<h5 class="card-title sub-heading">Kanti Hospital</h5>
-							<p class="card-text">Maharajgunj Rd, Kathmandu 44600</p>
-							<p><a href="#" class="link-underline-primary">Get Location</a></p>
-
+							<h5 class="card-title sub-heading">Not So Different</h5>
+							<p class="card-text">
+								Book that offers a lighthearted and relatable glimpse into the
+								author’s life. With humor and refreshing honesty, Burcaw
+								addresses the curious mind.
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col  bottom-space">
-					<div class="card">
+				<div class="col">
+					<div class="card popular-card-style pdf-before-content">
+						<div class="position-img">
+							<img
+								class="card-img-top"
+								src="./assets/images/pdf.svg"
+								alt="Card image cap"
+							/>
+						</div>
 						<div class="card-body">
-							<h5 class="card-title sub-heading">Patan Hospital</h5>
-							<p class="card-text">Maharajgunj Rd, Kathmandu 44600</p>
-							<p><a href="#" class="link-underline-primary">Get Location</a></p>
-
+							<h5 class="card-title sub-heading">The Pretty One</h5>
+							<p class="card-text">
+								Keah Brown's book offers a much-needed perspective on the
+								experiences of being Black and disabled in a predominantly
+								able-bodied white Am...
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
-
 		</div>
-		<div class="d-flex justify-content-between align-items-center">
-			<p class="main-heading-description">Click on the card to see the topics related to the selected
-				category.</p>
-			<p><a href="#" class="link-underline-primary">View All &nbsp; <i class="fa-solid fa-arrow-right"
-						style="color: #0a66c2;"></i> </a></p>
 
-		</div>
-	</div>
+		<!-- Nearest Hospitals -->
+		<div class="container hospital-container">
+			<h1 class="main-heading">Nearest Hospital</h1>
+			<div class="main-heading-line"></div>
 
-	<!-- App Download -->
-
-	<div class="container container-size download-container">
-		<div class="mockup-img-container"><img src="./assets/images/mockup.svg" alt="mockup"></div>
-		<div class="download-content">
-			<h1 class="main-heading">Get Disability Info Platform on your phone</h1>
-			<p>Unlock a world of knowledge at your fingertips! Download our Resource Library app today and access a treasure trove of valuable information anytime, anywhere.</p>
-			<button type="button" class="btn btn-light light-button">
-				Download Now
-			</button>
-
-		</div>
-	</div>
-
-	<!-- Footer -->
-	<div class="container footer-container">
-		<div class="row grid-gap">
-			<div class="col-6 col-sm-12 col-md-6">
-			   <img class="footer-logo" src="./assets/images/logo.svg" alt="">
-			   <p>Empowering through knowledge, our disability information platform bridges understanding and support.</p>
-			   <div class="social-media">
-				<img src="./assets/images/FacebookLogo.svg" alt="facebook">
-				<img src="./assets/images/TwitterLogo.svg" alt="twitter">
-				<img src="./assets/images/InstagramLogo.svg" alt="instagram">
-			   </div>
-			</div>
-			<div class="col col-sm-6 col-md-3">
-				<h5 class="card-title sub-heading">Navigations</h5>
-				<p><a class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link" href="#">Home</a></p>
-				<p><a class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link" href="#">About Us</a></p>
-				<p><a class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link" href="#">Learning Content</a></p>
-				<p><a class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link" href="#">Resources</a></p>
-				<p><a class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link" href="#">Services</a></p>
-				<p><a class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link" href="#">Contact Us</a></p>
-
-			</div>
-			<div class="col-3 col-sm-6 col-md-3 ">
-				<h5 class="card-title sub-heading">Contact Information</h5>
-				<div class="d-flex contact-information">
-					<img src="./assets/images/House.svg" alt="house">
-					<p>New Baneshwor, Kathmandu</p>
+			<p class="main-heading-description">
+				Click on the card to see more about the topic of your choice.
+			</p>
+			<div class="row">
+				<div class="col-12 col-md-8 map-col">
+					<iframe
+						class="hospital-map"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8645079525863!2d85.35946007428655!3d27.721469376174436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bda4a951f0f%3A0x3ddabb234891c3bd!2sBuddha%20Stupa!5e0!3m2!1sen!2snp!4v1703304396201!5m2!1sen!2snp"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
 				</div>
-				<div class="d-flex contact-information">
-					<img src="./assets/images/Phone.svg" alt="number" />
-					<p>+977 9818202020</p>
+				<div class="col">
+					<div class="col bottom-padding">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title sub-heading">Teaching Hospital</h5>
+								<p class="card-text">Maharajgunj Rd, Kathmandu 44600</p>
+								<p>
+									<a href="#" class="link-underline-primary">Get Location</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col bottom-space">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title sub-heading">Kanti Hospital</h5>
+								<p class="card-text">Maharajgunj Rd, Kathmandu 44600</p>
+								<p>
+									<a href="#" class="link-underline-primary">Get Location</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col bottom-space">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title sub-heading">Patan Hospital</h5>
+								<p class="card-text">Maharajgunj Rd, Kathmandu 44600</p>
+								<p>
+									<a href="#" class="link-underline-primary">Get Location</a>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="d-flex contact-information">
-					<img src="./assets/images/EnvelopeSimple.svg" alt="email">
-					<p>info@dip.com.np</p>
-				</div>
-				
+			</div>
+			<div
+				class="d-flex justify-content-between align-items-center flex-wrapping"
+			>
+				<p class="main-heading-description">
+					Click on the card to see the topics related to the selected category.
+				</p>
+				<a href="#" class="link-underline-primary"
+					>View All &nbsp;
+					<i class="fa-solid fa-arrow-right" style="color: #0a66c2"></i>
+				</a>
 			</div>
 		</div>
-	</div>
-	<div class="copyright">		
-		<p>Copyright © 2023 Disability Info Platform . All Right Reserved. </p>
-		<p>Developed by Ikigai Tech</p>
-	</div>
 
-</body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/d5503238d2.js" crossorigin="anonymous"></script>
+		<!-- App Download -->
 
+		<div class="container container-size download-container">
+			<div class="mockup-img-container">
+				<img src="./assets/images/mockup.svg" alt="mockup" />
+			</div>
+			<div class="download-content">
+				<h1 class="main-heading">Get Disability Info Platform on your phone</h1>
+				<p>
+					Unlock a world of knowledge at your fingertips! Download our Resource
+					Library app today and access a treasure trove of valuable information
+					anytime, anywhere.
+				</p>
+				<button type="button" class="btn btn-light light-button">
+					Download Now
+				</button>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container footer-container">
+			<div class="row grid-gap">
+				<div class="col-6 col-sm-12 col-md-6">
+					<img class="footer-logo" src="./assets/images/logo.svg" alt="" />
+					<p>
+						Empowering through knowledge, our disability information platform
+						bridges understanding and support.
+					</p>
+					<div class="social-media">
+						<img src="./assets/images/FacebookLogo.svg" alt="facebook" />
+						<img src="./assets/images/TwitterLogo.svg" alt="twitter" />
+						<img src="./assets/images/InstagramLogo.svg" alt="instagram" />
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-3">
+					<h5 class="card-title sub-heading">Navigations</h5>
+					<p>
+						<a
+							class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link"
+							href="#"
+							>Home</a
+						>
+					</p>
+					<p>
+						<a
+							class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link"
+							href="#"
+							>About Us</a
+						>
+					</p>
+					<p>
+						<a
+							class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link"
+							href="#"
+							>Learning Content</a
+						>
+					</p>
+					<p>
+						<a
+							class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link"
+							href="#"
+							>Resources</a
+						>
+					</p>
+					<p>
+						<a
+							class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link"
+							href="#"
+							>Services</a
+						>
+					</p>
+					<p>
+						<a
+							class="link-offset-2 link-underline link-underline-opacity-0 footer-nav-link"
+							href="#"
+							>Contact Us</a
+						>
+					</p>
+				</div>
+				<div class="col-3 col-sm-6 col-md-3">
+					<h5 class="card-title sub-heading">Contact Information</h5>
+					<div class="d-flex contact-information">
+						<img src="./assets/images/House.svg" alt="house" />
+						<p>New Baneshwor, Kathmandu</p>
+					</div>
+					<div class="d-flex contact-information">
+						<img src="./assets/images/Phone.svg" alt="number" />
+						<p>+977 9818202020</p>
+					</div>
+					<div class="d-flex contact-information">
+						<img src="./assets/images/EnvelopeSimple.svg" alt="email" />
+						<p>info@dip.com.np</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright © 2023 Disability Info Platform . All Right Reserved.</p>
+			<p>Developed by Ikigai Tech</p>
+		</div>
+	</body>
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://kit.fontawesome.com/d5503238d2.js"
+		crossorigin="anonymous"
+	></script>
 </html>
