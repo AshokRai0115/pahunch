@@ -89,23 +89,19 @@ p {
 	font-size: 18px;
 }
 
+/* spacing */
+.margin-top-spacing{
+	margin-top: 60px;
+}
+
 
 /* Navbar */
-.navbar-container {
-	width: 1440px;
-	height: 118px;
+.navbarr{
+	width: 100vw;
 	background: var(--white, #FFF);
 box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
-
-	display: flex;
-	justify-content: center;
 }
 
-.navbar-position {
-	width: var(--container-width);
-	height: auto;
-	padding: 0;
-}
 
 .collapse-background {
 	background-color: #ffffff;
@@ -132,8 +128,10 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 /* sexual health and rights */
 
 .health-and-rights-position{
+	/* margin-top: 60px; */
 	display: flex;
 	align-items: center;
+	
 }
 
 .accessible{
