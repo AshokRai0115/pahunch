@@ -59,7 +59,9 @@ body {
 .light-button:hover {
 	background-color: var(--primary-dark);
 	color: white;
+	border: none;
 }
+
 
 .button-primary {
 	width: 190px;
@@ -333,6 +335,7 @@ align-items: center;
 	padding: 0 20px;
 }
 
+
 /* Nearest Hospital  */
 .hospital-container{
 	max-width: 1140px;
@@ -355,3 +358,74 @@ align-items: center;
 	padding-right: 0;
 	
 }
+
+/* App Download */
+.download-container{
+	width: 1109px;
+	height: 367px;
+	border: none;
+	border-radius: 20px;
+	background-color: #2f7dcb;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+}
+
+.mockup-img-container{
+	width: 301px;
+	height: 100%;
+	position: relative;
+}
+
+.mockup-img-container>img{
+	height: 420px;
+	width: 100%;
+	position: absolute;
+	bottom: -4px;
+	
+}
+
+.download-content{
+	width: 615px;
+}
+
+.download-content>h1{
+	text-transform: uppercase;
+
+}
+
+@media(max-width: 1130px){
+	.download-container{
+		max-width: 97vw;
+	}
+	.mockup-img-container>img{
+		padding-left: 20px;
+		height: 100%;
+		bottom: 0px;
+
+	}
+	.download-content{
+		width: 500px;
+	}
+}
+
+
+@media(max-width: 930px){
+	.download-container{
+		flex-flow: column;
+		height: 1050px;
+		flex-direction: column-reverse;
+
+	}
+	.mockup-img-container{
+		width: 70%;
+	}
+	
+	.download-content{
+		margin-top: 55px;
+		width: 615px;
+		height: 400px;
+	}
+}
+
