@@ -79,6 +79,7 @@
 	margin-top: 16px;
 	width: 63px;
 	border: 2px solid var(--primary-dark);
+	background-color: var(--primary-dark);
 }
 
 .main-heading-description{
@@ -103,9 +104,9 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 }
 
 
-.collapse-background {
-	background-color: #ffffff;
-}
+	/* .collapse-background {
+		background-color: #ffffff;
+	} */
 
 .logo {
 	width: 161px;
@@ -128,9 +129,9 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 /* sexual health and rights */
 
 .health-and-rights-position{
-	/* margin-top: 60px; */
 	display: flex;
 	align-items: center;
+	flex-flow: row wrap-reverse;
 	
 }
 
@@ -153,16 +154,11 @@ box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 
 .health-and-rights-left{
 	width: 634px;
-	height: 236px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 }
 
-.health-and-rights-image{
-	width: 443px;
-	height: 329px;
-}
 
 .buttons{
 	width: 405px;
