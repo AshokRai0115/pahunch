@@ -218,14 +218,14 @@ p {
 	width: 90px;
 	height: 45px;
 	position: absolute;
-	top: -43px;
+	top: -42px;
 	border-radius: 10rem 10rem 0 0;
 	border: 2px solid var(--primary-dark);
 	z-index: 1;
 	margin: auto;
 	left: 0;
 	right: 0;
-	border-bottom: 3px solid white;
+	border-bottom: 5px solid white;
 }
 
 .card-size > img {
