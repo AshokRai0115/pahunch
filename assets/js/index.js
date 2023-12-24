@@ -1,8 +1,6 @@
 const searchBar= document.getElementsByClassName('toggle-search');
 const searchToggler = document.getElementById('search-toggler');
-// searchBar.addEventListener('click', ()=>{
-//     searchBar
-// })
+
 const bar = document.getElementById('search-toggler');
 
 console.log(searchBar[0].classList);
@@ -20,3 +18,5 @@ searchToggler.addEventListener('click', ()=>{
     }
     console.log(searchBar[0].classList)
 })
+
+
