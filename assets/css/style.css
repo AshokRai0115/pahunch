@@ -82,6 +82,10 @@ p {
 	font-size: 18px;
 }
 
+.icon-color{
+	color: var(--primary-dark);
+}
+
 
 
 /* spacing */
