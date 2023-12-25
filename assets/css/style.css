@@ -102,6 +102,15 @@ p {
 	row-gap: 30px;
 }
 
+.card{
+	transition: transform .2s; 
+}
+.card:hover{
+	transform: scale(1.01);
+	box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
+
+}
+
 
 
 /* Navbar */
@@ -144,10 +153,8 @@ p {
 	/* display: none; */
 	width: 0px;
 	border: none;
-
 	
 }
-
 
 .show{
 	width: 100px;
@@ -193,6 +200,7 @@ p {
 	align-items: center;
 	color: var(--primary-dark);
 	position: fixed;
+	z-index: 2;
 }
 
 .health-and-rights-left {
@@ -228,15 +236,18 @@ p {
 }
 
 .card-container {
-	background-color: rgb(20, 55, 86);
+	/* background-color: rgb(20, 55, 86); */
 	display: flex;
 	flex-wrap: wrap;
+	
 }
 
 .card-size {
 	width: 350px;
 	height: 307px;
 	position: relative;
+	border: 2px solid var(--primary-dark);
+
 }
 
 .card-size::before {
@@ -244,14 +255,15 @@ p {
 	width: 90px;
 	height: 45px;
 	position: absolute;
-	top: -42px;
+	top: -44px;
 	border-radius: 10rem 10rem 0 0;
 	border: 2px solid var(--primary-dark);
 	z-index: 1;
 	margin: auto;
 	left: 0;
 	right: 0;
-	border-bottom: 5px solid white;
+	border-bottom: none;
+	background-color: white;
 }
 
 
@@ -271,7 +283,6 @@ p {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	border: 2px solid var(--primary-dark);
 	position: relative;
 	border-radius: 5px;
 
@@ -365,6 +376,8 @@ p {
 	border-radius: 10px;
 	position: relative;
 }
+
+/* .card */
 
 .popular-card-style::before {
 	content: "Audio";
@@ -544,16 +557,7 @@ p {
 .footer-nav-link:hover{
 	text-decoration: none	;
 }
-.card{
-	transition: transform .2s; 
-}
-.card:hover{
-	transform: scale(1.01);
-	border-color:white;
-	
-	box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 
-}
 .contact-information-design::before {
 	content: "";
 	margin: auto;
