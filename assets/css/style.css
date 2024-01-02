@@ -106,7 +106,7 @@ p {
 	transition: transform .2s; 
 }
 .card:hover{
-	transform: scale(1.01);
+	/* transform: scale(1.01); */
 	box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 
 }
@@ -114,6 +114,15 @@ p {
 
 
 /* Navbar */
+
+/* .nave{
+	width: 640px;
+	display: flex;
+	justify-content: space-between;
+} */
+
+
+
 .navbar-outer-container {
 	width: 100vw;
 	background: var(--white, #fff);
@@ -135,6 +144,15 @@ p {
 
 .underlining{
 	color: black !important;
+
+}
+
+.active{
+	text-decoration:underline !important;
+	text-decoration-thickness: 2px !important;
+	text-underline-offset: 5px !important;
+	text-decoration-color: var(--primary-dark);
+	color: var(--primary-dark) !important;
 }
 
 .underlining:hover{
@@ -253,7 +271,7 @@ p {
 .card-size::before {
 	content: "";
 	width: 90px;
-	height: 45px;
+	height: 44px;
 	position: absolute;
 	top: -44px;
 	border-radius: 10rem 10rem 0 0;
