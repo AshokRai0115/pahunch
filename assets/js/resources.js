@@ -24,17 +24,7 @@ toggleCircle.addEventListener('click',()=>{
     
 })
 
-function navbarStyling(){
-    navElements.forEach(element=>{
-        element.addEventListener("click", (event)=>{
-            element.classList.add("active");
-            console.log("clicke")
-            event.stopPropagation();
-        })
-    })
-}
 
-navbarStyling()
 
 
 

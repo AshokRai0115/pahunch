@@ -133,14 +133,3 @@ function createCard(topic){
 
     return cardContainer;
 }
-
-function navbarStyling(){
-    navElements.forEach(element=>{
-        element.addEventListener("click", (event)=>{
-            element.classList.add("active");
-            event.stopPropagation();
-        })
-    })
-}
-
-navbarStyling()
