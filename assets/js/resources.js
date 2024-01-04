@@ -2,6 +2,7 @@ const toggleCircle = document.getElementsByClassName('resources-toggle-circle')[
 const toggleContainer = document.getElementsByClassName('resources-section-toggle') [0];
 const navElements = document.querySelectorAll(".underlining");
 var toggleValue = "NE";
+var toggleText = document.getElementsByClassName("resources-toggle-text")[0]
 
 
 toggleCircle.addEventListener('click',()=>{
@@ -11,11 +12,12 @@ toggleCircle.addEventListener('click',()=>{
         toggleCircle.classList.remove("move-circle-left");
         toggleValue = "EN";
         toggleCircle.style.backgroundColor = "white";
+        toggleText.style.color = "white";
 
     }
     else{
         toggleContainer.classList.remove("toggle-background");
-        toggleCircle.style.backgroundColor = " #0a66c2";
+        toggleCircle.style.backgroundColor = "#C4C4C4";
         toggleCircle.classList.add("move-circle-left");
         toggleCircle.classList.remove("move-circle-right");
         toggleValue = "NE";

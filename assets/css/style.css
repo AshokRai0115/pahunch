@@ -74,7 +74,7 @@
 
 /* paragraph and headers */
 .main-heading-line {
-	margin-top: 16px;
+	margin-top: 8px;
 	width: 63px;
 	border: 2px solid var(--primary-dark);
 	background-color: var(--primary-dark);
@@ -106,6 +106,10 @@ p {
 
 .grid-gap {
 	row-gap: 30px;
+}
+
+.grid-gap p{
+	max-width: 475px;
 }
 
 .card{
@@ -453,6 +457,7 @@ p {
 	border: none;
 	border-radius: 0px 0px 20px 20px;
 	text-align: center;
+	font-size: 20px;
 	color: white;
 	display: flex;
 	justify-content: center;

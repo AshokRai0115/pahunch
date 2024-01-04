@@ -136,6 +136,11 @@
 	transition: transform .4s;
 	transform: translateX(2px);
 }
+.sub-heading-health {
+	font-size: var(--sub-header);
+	font-weight: 600;
+	max-width: 430px;
+}
 
 /* Carousel */
 
