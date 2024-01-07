@@ -1,6 +1,8 @@
 const searchBar= document.getElementsByClassName('toggle-search')[0];
 const searchToggler = document.getElementById('search-toggler');
 const bar = document.getElementById('search-toggler');
+const navElements = document.querySelectorAll(".underlining");
+
 
 const helpfulTopics =[
     {
@@ -56,8 +58,6 @@ const helpfulTopics =[
 
 ]
 
-console.log(searchBar.classList);
-console.log(searchToggler);
 searchToggler.addEventListener('click', ()=>{
     if(searchBar.classList.contains('hide')){
         searchBar.classList.remove('hide');
@@ -90,7 +90,6 @@ const helpfulTopicsContainer = document.getElementsByClassName('helpful-topics-c
 
 for(i = 0; i < helpfulTopics.length; i++){
     helpfulTopicsContainer.appendChild(createCard(helpfulTopics[i]));
-    console.log(createCard(helpfulTopics[i]));
 }
 
 function createCard(topic){
