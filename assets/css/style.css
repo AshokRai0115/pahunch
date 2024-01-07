@@ -165,7 +165,7 @@ p {
 }
 
 .navigation-outer-width{
-	width: 830px;
+	width: 780px;
 	flex-grow: 0;
 
 }
@@ -643,12 +643,12 @@ footer{
 
 .contact-information-design::before {
 	content: "";
-	margin: auto;
+	/* margin: auto; */
 	width: 268px;
 	height: 9px;
 	border: none;
 	border-radius: 0 0 5px 5px;
-	left: 0;
+	left: 10px;
 	right: 0;
 	top: -13px;
 	background-color: var(--primary-dark);

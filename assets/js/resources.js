@@ -95,7 +95,7 @@ var paginationNumber = 1;
 var articleBreaker = 4;
 
 
-const carouselContainer = document.getElementsByClassName('carousel-container')[0];
+// const carouselContainer = document.getElementsByClassName('carousel-container')[0];
 
 // render content dynamically
 function renderArticle(articles){
@@ -131,6 +131,7 @@ function renderArticle(articles){
         carouselDate.innerHTML = "<span>&middot; &nbsp</span>";
         carouselDate.innerText += articles[i].date;
         carouselAuthor.innerText = articles[i].writer;
+
         carouselImgContainer.appendChild(carouselImg)
         carouselRow.appendChild(carouselImgContainer);
         carouselCard.appendChild(carouselRow)

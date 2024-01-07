@@ -71,9 +71,13 @@
 .resources-section-tag {
 	text-transform: uppercase;
 	color: rgba(28, 28, 28, 0.5);
+	color: rgba(28, 28, 28, 0.5);
+
 }
 
+
 .resources-section-author,
+.carousel-author,
 .resources-section-date {
 	color: rgba(28, 28, 28, 0.5);
 	margin-bottom: 6px;
@@ -144,8 +148,14 @@
 
 /* Carousel */
 
+.carousel-container{
+	padding: 0;
+}
+
 .carousel-card{
 	border-radius: 10px;
+	padding: 0;
+	margin-left: 40px;
 }
 
 .category{
@@ -204,6 +214,15 @@
 	padding-right: 15px;
 }
 
+.date-dot{
+	font-size: 20px;
+	line-height: 19px;
+}
+
+.pagination-number{
+	padding-left: 0;
+	margin-left: 40px;
+}
 
 .pagination a {
 	border-radius: 10px!important;
