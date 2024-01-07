@@ -185,8 +185,9 @@
 	box-shadow: 0px 2px 6px 0px rgba(19, 21, 21, 0.25);
 	position: sticky;
 	top: 80px;
-	height: auto;
+	height: 330px;
 	padding: 20px;
+	border-radius:8px ;
 }
 
 .category-margin{
@@ -198,3 +199,28 @@
 	margin-left:0 !important;
 	margin-right:0 !important;
 }
+
+.page-item{
+	padding-right: 15px;
+}
+
+
+.pagination a {
+	border-radius: 10px!important;
+
+  }
+
+
+  .pagination a:hover{
+	background-color: #0a66c2;
+	border: 1px solid var(--primary-dark);
+	color: #fff;
+  }
+
+  .spreader{
+	display: flex;
+	align-items: center;
+	color: var(--primary-dark);
+	padding-right: 15px;
+
+  }

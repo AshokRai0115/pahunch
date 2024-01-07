@@ -117,7 +117,7 @@ function renderArticle(articles){
         let contentRow = document.createElement("div");
         contentRow.classList.add("row")
         let carouselAuthor = document.createElement("div");
-        carouselAuthor.classList.add("col-12", "col-lg-4", "carousel-author", "resources-section-author")
+        carouselAuthor.classList.add("col-12", "col-lg-3", "carousel-author", "resources-section-author")
         let carouselDate = document.createElement("div");
         carouselDate.classList.add("col-12", "col-lg", "carousel-date", "resources-section-date")
         let carouselContent = document.createElement("p");
@@ -128,17 +128,18 @@ function renderArticle(articles){
         cardTag.innerText = articles[i].tag;
         cardHeading.innerText = articles[i].heading
         carouselContent.innerText = articles[i].content;
-        carouselDate.innerText = articles[i].date;
+        carouselDate.innerHTML = "<span>&middot; &nbsp</span>";
+        carouselDate.innerText += articles[i].date;
         carouselAuthor.innerText = articles[i].writer;
         carouselImgContainer.appendChild(carouselImg)
         carouselRow.appendChild(carouselImgContainer);
         carouselCard.appendChild(carouselRow)
         carouselContainer.appendChild(carouselCard)
         cardBody.appendChild(cardTag)
-        contentRow.appendChild(carouselDate)
-        contentRow.appendChild(carouselAuthor);
-        cardBody.appendChild(contentRow)
         cardBody.appendChild(cardHeading)
+        cardBody.appendChild(contentRow)
+        contentRow.appendChild(carouselAuthor);
+        contentRow.appendChild(carouselDate);
         cardBody.appendChild(carouselContent);
         carouselRow.appendChild(cardBody);
 
